@@ -1,0 +1,15 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var n = sc.nextInt();
+        
+        
+               for(i<-Range(0,n)){
+               for(j<-Range(0,n-i-1)) print(" ")
+               for(k<-Range(0,i+1)) print("#")
+               println()
+               }
+    }
+    
+}

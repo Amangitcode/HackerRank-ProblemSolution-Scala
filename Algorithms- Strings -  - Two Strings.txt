@@ -1,0 +1,17 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var q = sc.nextInt();
+        var a0:Int = 0;
+        while(a0 < q){
+            var s1 = sc.next();
+            var s2 = sc.next();
+            a0+=1;
+            
+                    var ss:String = s1 intersect s2
+                    if(ss.length>0) println("YES")
+                    if(ss.length == 0) println("NO")
+        }
+    }
+}

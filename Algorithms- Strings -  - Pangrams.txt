@@ -1,0 +1,20 @@
+// main method in "Solution" will be run as your answer
+object Solution {
+
+    def main(args: Array[String]) {
+        //Enter your code here. Read input from STDIN. Print output to STDOUT
+        
+        val sc = new java.util.Scanner (System.in);
+        var ss = sc.nextLine();
+        
+        val s = ss.toLowerCase
+        
+        //println(s)
+        
+        //println(s.distinct.length)
+        if(s.distinct.length == 27) println("pangram")
+        if(s.distinct.length != 27) println("not pangram")
+        
+    }
+
+}

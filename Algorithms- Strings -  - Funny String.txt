@@ -1,0 +1,23 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var q = sc.nextInt();
+        var a0:Int = 0;
+        while(a0 < q){
+            var s = sc.next();
+            a0+=1;
+            
+                val r = s.reverse
+
+                var count = 1
+
+                for(i<-Range(1,s.length)){
+                  if(Math.abs(s(i)-s(i-1))==Math.abs(r(i)-r(i-1))) count +=1
+                }
+
+                if(count == s.length) println("Funny")
+                if(count != s.length) println("Not Funny")
+        }
+    }
+}

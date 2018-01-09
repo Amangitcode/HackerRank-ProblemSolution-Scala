@@ -1,0 +1,27 @@
+ import scala.collection.mutable.ArrayBuffer
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var s = sc.next();
+        
+                   
+
+                    //val s:String = "aabbcccddd"
+                    var count:Int = 0
+
+                    var sd = s.distinct
+                    var arr = ArrayBuffer[Int]()
+
+                    for(i<-Range(0,sd.length)){
+                        arr+= s.count(_==sd(i))
+                    }
+
+                    for(i<-Range(0,arr.length)){
+                        if(arr(i)%2 != 0) count+=1
+                    }
+
+                    if(count <= 1) println("YES")
+                    if(count>1) println("NO")
+    }
+}

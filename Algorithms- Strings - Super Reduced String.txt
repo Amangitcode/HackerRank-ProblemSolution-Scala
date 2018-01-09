@@ -1,0 +1,43 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var s = sc.next();
+        
+                s = s.toLowerCase()
+                var shortString:String = ""
+
+                 var i:Int = 1
+                 while(i< s.length){
+                 if(s(i)==s(i-1)) i+=2
+                 else {shortString += s(i-1); i+=1;}
+
+                 if (i==s.length) shortString +=s(i-1)
+
+                             if (i==s.length || i==(s.length+1)) {
+
+                               var j:Int =1
+                               while(j<shortString.length){
+                                 if(shortString(j)==shortString(j-1)) {
+                                   j = shortString.length
+                                   i = 1
+                                   s = shortString
+                                   shortString = ""
+                                 }
+                                 j+=1
+                               }
+                             }
+
+
+                 }
+
+
+                 //println(shortString)
+
+
+                 //if(s.length%2 !=0) shortString += s(s.length-1)
+                if (shortString.length == 0) println("Empty String")
+                else println(shortString)
+        
+    }
+}

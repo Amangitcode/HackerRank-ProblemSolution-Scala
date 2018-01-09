@@ -1,0 +1,15 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var s = sc.next();
+        
+        val casePattarn = "[A-Z]".r
+        var j:Int = 1
+        for(i<-casePattarn.findAllIn(s)) j+=1
+
+        println(j)
+    }
+    
+    
+}

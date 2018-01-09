@@ -1,0 +1,35 @@
+import scala.collection.mutable.ArrayBuffer
+
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var arr = Array.ofDim[Int](6,6);
+        for(arr_i <- 0 to 6-1) {
+           for(arr_j <- 0 to 6-1){
+              arr(arr_i)(arr_j) = sc.nextInt();
+           }
+        }
+                var sum = 0
+                var sarr = ArrayBuffer[Int]()
+
+                for(k<-Range(0,4)){
+                  for(l<-Range(0,4)){
+
+                    sum = 0
+                    for(i<-Range(0+k,3+k)){
+                      for(j<-Range(0+l,3+l)){
+                        sum += arr(i)(j)
+                      }
+                    }
+                    sum = sum - arr(1+k)(0+l) - arr(1+k)(2+l)
+                    sarr += sum
+
+                }
+                }
+                println(sarr.max)
+        
+        
+        
+    }
+}

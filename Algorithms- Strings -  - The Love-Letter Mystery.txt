@@ -1,0 +1,19 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var q = sc.nextInt();
+        var a0:Int = 0;
+        while(a0 < q){
+            var s = sc.next();
+            a0+=1;
+            
+                var count:Int = 0
+
+                for(i<-Range(0,s.length/2)){
+                  count+=Math.abs(s(i)- s(s.length-1-i))
+                }
+                println(count)
+        }
+    }
+}

@@ -1,0 +1,24 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var n = sc.nextInt();
+        var arr = new Array[Int](n);
+        for(arr_i <- 0 to n-1) {
+           arr(arr_i) = sc.nextInt();
+        }
+        
+                var countP:Double = 0.0
+        var countN:Double = 0.0
+        var countZ:Double = 0.0
+        for(i<-Range(0,arr.length)){
+            if(arr(i)>0) countP +=1
+            if(arr(i)<0) countN +=1
+            if(arr(i)==0) countZ +=1
+        }
+
+            println(countP/arr.length)
+            println(countN/arr.length)
+            println(countZ/arr.length)
+    }
+}

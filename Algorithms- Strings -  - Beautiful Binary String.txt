@@ -1,0 +1,22 @@
+object Solution {
+
+    def beautifulBinaryString(b: String): Int =  {
+        // Complete this function
+            var count:Int = 0
+            var i:Int = 2
+
+            while(i<b.length){
+              if((b(i-2)=='0') && (b(i-1)=='1') && (b(i)=='0')) {i+=2; count+=1}
+              i+=1
+            }
+            return count
+    }
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var n = sc.nextInt();
+        var b = sc.next();
+        val result = beautifulBinaryString(b);
+        println(result)
+    }
+}

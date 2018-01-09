@@ -1,0 +1,31 @@
+import util.control._
+
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var q = sc.nextInt();
+        var a0:Int = 0;
+        while(a0 < q){
+            var ss = sc.next();
+            
+            val s = "hackerrank"
+            var count:Int = 0
+                    val loop = new Breaks
+                    var ssLoop:Int = -1
+
+                    for(i<- Range(0,s.length)){
+                          loop.breakable{
+                          for(j<-Range(ssLoop+1,ss.length)){
+                            if(s(i)==ss(j)) {ssLoop = j; count+=1; loop.break}
+                          }
+                          }
+                    }
+
+                    if(count==10) print("YES")
+                    if(count!=10) print("NO")
+            a0+=1;
+            println()
+        }
+    }
+}

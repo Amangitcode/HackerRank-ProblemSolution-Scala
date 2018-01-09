@@ -1,0 +1,13 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner (System.in);
+        var S = sc.next();
+        
+        val sosPattarn = "SOS".r
+        var j = 0
+        for(i<-sosPattarn.findAllIn(S)) j+=1
+
+        println(S.length/3-j)
+    }
+}

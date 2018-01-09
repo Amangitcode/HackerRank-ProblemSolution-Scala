@@ -1,0 +1,21 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        val sc = new java.util.Scanner(System.in)
+        val d = sc.nextInt()
+        var arr = new Array[String](d)
+        
+        for(i<-Range(0,d)){
+            arr(i) = sc.next()
+        }
+        
+        var q = sc.nextInt()
+        var qarr = new Array[String](q)
+        for(i<-Range(0,q)){
+            qarr(i) = sc.next()
+            println(arr.count(_==qarr(i)))
+        }
+        
+        
+    }
+}
