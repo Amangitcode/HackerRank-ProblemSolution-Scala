@@ -1,6 +1,6 @@
-This repo contains SOLUTIONS for few HackerRank problems
+#HackerRank problems and SOLUTIONS!!
 
-For problem detail visit HackerRank page and follow the name of the solution file. 
+Do not see the solution before you try. For problem detail visit HackerRank page and follow the name of the solution file. 
 https://www.hackerrank.com
 
 Go by - Algorithm
